@@ -15,12 +15,22 @@ public class Main{
         a.show();
 
 
+        // 02 - interface with anonymous 
+        Animal2 a2 = new Animal2(){
+            public void Dog(){
+                System.out.println("Interface with anonymous class");
+            }
+        };
+
+        a2.Dog();
         
 
     }
 
 }
 
+
+// 01
 class Animal{
     public void show(){
         System.out.println("Main class");
@@ -28,3 +38,8 @@ class Animal{
 }
 
 
+
+// 02
+interface Animal2{
+    public void Dog();
+}
