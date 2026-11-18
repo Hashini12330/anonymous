@@ -14,6 +14,8 @@ public class Main{
         
         a.show();
 
+        System.out.println("---------------------------------------");
+
 
         // 02 - interface with anonymous 
         Animal2 a2 = new Animal2(){
@@ -23,7 +25,20 @@ public class Main{
         };
 
         a2.Dog();
+
+        System.out.println("---------------------------------------");
+
+
+
+        // 03 - abstract class with anonymous
+        Animal3 a3 = new Animal3() {
+            public void abs(){
+                System.out.println("This is abstract with anonymous");
+
+            }
+        };
         
+        a3.abs();
 
     }
 
@@ -42,4 +57,11 @@ class Animal{
 // 02
 interface Animal2{
     public void Dog();
+}
+
+
+
+// 03
+abstract class Animal3{
+    abstract void abs();
 }
